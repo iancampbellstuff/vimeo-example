@@ -1,0 +1,42 @@
+{
+  "name": "vimeo-example",
+  "version": "1.0.0",
+  "description": "This codebase demonstrates basic usage of the Vimeo Node API.",
+  "main": "src/index",
+  "private": true,
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "lint": "tslint --project ./tsconfig.json",
+    "prestart": "npm run lint && npm run build",
+    "start": "ts-node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "icampbell2",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "8.2.0",
+    "vimeo": "2.1.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "8.2.0",
+    "@types/node": "13.13.2",
+    "@types/vimeo": "2.1.0",
+    "rimraf": "3.0.2",
+    "ts-node": "8.9.0",
+    "tslint": "6.1.1",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "3.8.3"
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "npm run lint --fix",
+      "git add"
+    ]
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "pre-push": "npm test"
+  }
+}

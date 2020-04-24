@@ -1,0 +1,12 @@
+{
+  // See https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions for reference.
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "henriiik.vscode-sort",
+    "ionutvmi.path-autocomplete",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "pflannery.vscode-versionlens",
+    "wayou.vscode-todo-highlight"
+  ]
+}

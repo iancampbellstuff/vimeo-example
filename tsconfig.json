@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["node", "vimeo"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["dom", "esnext"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

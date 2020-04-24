@@ -1,0 +1,12 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["node_modules/**/*.ts"]
+  },
+  "rules": {
+    "max-classes-per-file": false,
+    "no-console": false,
+    "no-var-requires": false,
+    "ordered-imports": false
+  }
+}
